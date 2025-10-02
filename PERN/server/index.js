@@ -27,7 +27,7 @@ const startServer = async ()=>{
   try {
     await connectDB()
     await sequelize.sync()
-    app.listen(process.env.PORT)
+    app.listen(PORT)
   } catch (error) {
     console.log('Failed to start server',error)
     
